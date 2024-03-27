@@ -7,7 +7,7 @@ public class School {
     int studentCount;
 
     public void displayResult(){
-        System.out.println("Name of the school" +name);
-        System.out.println("Address of the school" +address);
+        System.out.println("Name of the school " +name);
+        System.out.println("Address of the school " +address);
     }
 }

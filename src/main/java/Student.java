@@ -1,9 +1,9 @@
 public class Student {
     String name;
-    int age;
+    String sports;
 
     public void play(){
-        System.out.println("Student "+name+ " love playing");
+        System.out.println("Student "+name+ " love playing "+sports);
     }
     public void eat(){
         System.out.println("Student "+name+ "eats");
