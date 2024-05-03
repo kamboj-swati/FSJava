@@ -1,32 +1,23 @@
 public class Employee {
-    String name;
-    int age;
-    private float monthlySalary;
-    int empId;
-    boolean isActive;
-    Employee(String name, int age,float salary, int id, boolean status){
-        this.name= name;
-        this.age = age;
-        monthlySalary = salary;
-        empId = id;
-        isActive = status;
+
+    private String name;
+    private Integer empId;
+    private Character gender;
+
+    public Employee(String name, Integer Id, Character gender){
+        this.name = name;
+        this.empId = Id;
+        this.gender = gender;
+    }
+    public String getName(){
+        return this.name;
+    }
+    public Integer getEmpId(){
+        return this.empId;
+    }
+    public Character getGender(){
+        return this.gender;
     }
 
-    public float getMonthlySalary() {
-        return monthlySalary;
-    }
 
-    public void getDetails(){
-        System.out.println("Name is:"+name);
-        System.out.println("Employee Id is:"+empId);
-        System.out.println("Age is:"+age);
-    }
-    public float getTaxAmountToBePaid(){
-        float tax;
-        if(monthlySalary > 100000)
-            tax = (float) (monthlySalary*0.2);
-        else
-            tax =0;
-        return tax;
-    }
 }
